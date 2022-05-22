@@ -1,5 +1,12 @@
 const db = require('../helpers/database')
 
+
+
+/**
+ * JSdoc
+ * @param {*} param0 
+ * @returns 
+ */
 //list all the breeds in the database
 exports.getAll = async function getAll () {
     let query = "select * from breeds;"

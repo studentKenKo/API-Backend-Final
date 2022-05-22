@@ -1,5 +1,12 @@
 //findout user in Database
 
+/**
+ * JSdoc
+ * @param {*} param0 
+ * @returns 
+ */
+
+
 const db = require('../helpers/database')
 
 exports.findByUsername = async function getByUsername(user_name) {

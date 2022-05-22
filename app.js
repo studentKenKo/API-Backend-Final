@@ -1,11 +1,12 @@
 const Koa = require('koa')
 const cors = require('@koa/cors');
 const static = require('koa-static-router')
-
 const app = new Koa()
 
-// const special = require('./routes/special')
-// const articles = require('./routes/articles')
+/**
+ *  nodeJS Path directory.
+ */
+
 const user = require('./routes/users')
 const animal = require('./routes/animals')
 const breed = require('./routes/breeds')
@@ -14,8 +15,6 @@ const centre = require('./routes/centres')
 const bookmark = require('./routes/bookmarks')
 
 app.use(cors());
-// app.use(special.routes())
-// app.use(articles.routes())
 app.use(user.routes())
 app.use(animal.routes())
 app.use(breed.routes())

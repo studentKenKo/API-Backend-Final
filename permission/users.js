@@ -1,6 +1,10 @@
 const AccessControl = require('role-acl')
 const ac = new AccessControl()
 
+/**
+ * JSdoc control user permission using ACL.
+ */
+
 ac.grant('user')
   .condition({ Fn:'EQUALS', args: {'requester':'$.owner'}})
   .execute('read')

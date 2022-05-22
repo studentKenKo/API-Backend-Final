@@ -1,6 +1,6 @@
-var express = require('express');
+var Koa = require('Koa');
 var passport = require('passport');
-var app = express();
+var app = Koa();
 var BasicStrategy = require('passport-http').BasicStrategy;
 passport.use(new BasicStrategy(
    function (username, password, done) {

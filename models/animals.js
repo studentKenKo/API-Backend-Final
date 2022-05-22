@@ -1,6 +1,13 @@
 const db = require('../helpers/database')
 const rwClient = require("../twitterClient");
 
+
+/**
+ * JSdoc
+ * @param {*} param0 
+ * @returns 
+ */
+
 //get by id
 exports.getById = async function getById (id) {
   let query = "select animals.*, breeds.name as breed_name, centres.name as centre_name from animals inner join breeds on animals.breed_id = breeds.id inner join centres on animals.centre_id = centres.id where animals.id = ?;"

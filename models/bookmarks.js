@@ -1,5 +1,13 @@
 const db = require('../helpers/database')
 
+
+/**
+ * JSdoc
+ * @param {*} param0 
+ * @returns 
+ */
+
+
 // get all
 exports.getAll = async function getAll () {
     let query = "select * from bookmarks;"
