@@ -3,8 +3,8 @@ const rwClient = require("../twitterClient");
 
 
 /**
- * JSdoc
- * @param {*} param0 
+ * 
+ * @param {*} id 
  * @returns 
  */
 

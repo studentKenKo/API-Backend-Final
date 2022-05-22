@@ -1,11 +1,8 @@
 const db = require('../helpers/database')
 
-
-
 /**
- * JSdoc
- * @param {*} param0 
- * @returns 
+ * 
+ * @returns String
  */
 
 //list all the centres in the database

@@ -2,8 +2,7 @@ const db = require('../helpers/database')
 
 
 /**
- * JSdoc
- * @param {*} param0 
+ * 
  * @returns 
  */
 

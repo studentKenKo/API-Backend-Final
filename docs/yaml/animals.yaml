@@ -1,0 +1,73 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Back End Demonstration API
+  description: A Pet shop API.
+  contact:
+    name: KenKo
+    email: 217014330@stu.vtc.edu.hk
+  license:
+    name: Apache 2.0
+    url: 'https://www.apache.org/licenses/LICENSE-2.0.html'
+servers:
+  - url: 'https://Localhost:10833'
+    description: Development server
+tags:
+  - name: Users
+    description: API endpoints for user management.
+  - name: Animals
+    description: Access and perform CRUD operations on pet shop entries.
+paths:
+  api/v1/animal/{id}:
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+        description: Numeric id of the animals
+    get:
+      tags:
+        - animals
+      description:
+        Get animals by id.
+      responses:
+        '200':
+          description: View of animals 
+        '404':
+          description: animals was not found in the DB.
+    post:
+      tags:
+        - animals
+      description:
+        Create a new animal.
+      requestBody:
+        description: All new animal data.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: ./animal.json#/definitions/animal
+      responses:
+        '201':
+          description: User created
+
+    put:
+      tags:
+        - animals
+      description: Update animals by ID.
+      responses:
+        '200':
+          description: Update confirmation and link to record.
+        '404':
+          description: animals was not found in the DB.
+    delete:
+      tags:
+        - animals
+      description: Delete animals by ID.
+    responses:
+        '200':
+          description: Delete confirmation.
+        '404':
+          description: Animal was not found in the DB.
+
