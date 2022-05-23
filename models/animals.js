@@ -4,8 +4,8 @@ const rwClient = require("../twitterClient");
 
 /**
  * 
- * @param {*} id 
- * @returns 
+ * @param {integer} id 
+ * @returns {object} animals list
  */
 
 //get by id

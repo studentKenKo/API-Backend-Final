@@ -5,6 +5,14 @@ const schemaComment = require('../schemas/comment.schema.js');
 const schemaBookmark = require('../schemas/bookmark.schema.js');
 const v = new Validator()
 
+
+/**
+ * A module to run JSON Schema based validation on request/response data.
+ * @module controllers/validation
+ * @author Ko Long
+ * @see schemas/* for JSON Schema definition files
+ */
+
 exports.validateArticle = async (ctx, next) => {
 
   const validationOptions = {

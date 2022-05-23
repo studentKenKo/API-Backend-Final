@@ -29,5 +29,8 @@
     "supertest": "^6.2.3",
     "twitter-api-v2": "^1.12.2"
   },
-  "proxy": "http://localhost:3000"
+  "proxy": "http://localhost:3000",
+  "devDependencies": {
+    "jsdoc": "^3.6.10"
+  }
 }

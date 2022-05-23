@@ -1,5 +1,7 @@
-module.exports = {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+   
+   {
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "definitions":{
     "id": "/animal",
     "title": "Animal",
     "description": "An animal",
@@ -36,8 +38,8 @@ module.exports = {
       "centre_id": {
         "description": "centre ID of the animal",
         "type": "integer"
-      },
+      }
     },
     "required": ["name", "breed_id", "centre_id"]
   }
-  
+   }

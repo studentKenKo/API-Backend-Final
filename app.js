@@ -1,6 +1,6 @@
 const Koa = require('koa')
 const cors = require('@koa/cors');
-const static = require('koa-static-router')
+//const static = require('koa-static-router')
 const app = new Koa()
 
 /**
@@ -21,7 +21,7 @@ app.use(breed.routes())
 app.use(comment.routes())
 app.use(centre.routes())
 app.use(bookmark.routes())
-app.use(static({dir:'docs', router: '/doc/'}))
+//app.use(static({dir:'docs', router: '/doc/'}))
 
 let port = process.env.PORT || 10833;
 

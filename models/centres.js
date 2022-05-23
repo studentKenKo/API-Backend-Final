@@ -2,7 +2,7 @@ const db = require('../helpers/database')
 
 /**
  * 
- * @returns String
+ * @returns {String} centres information
  */
 
 //list all the centres in the database

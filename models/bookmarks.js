@@ -3,7 +3,7 @@ const db = require('../helpers/database')
 
 /**
  * 
- * @returns 
+ * @returns {object} all of bookmarks
  */
 
 

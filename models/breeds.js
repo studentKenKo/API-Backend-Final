@@ -2,7 +2,7 @@ const db = require('../helpers/database')
 
 /**
  * 
- * @returns 
+ * @returns {object} list all breeds
  */
 
 
