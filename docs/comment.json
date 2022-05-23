@@ -1,4 +1,4 @@
-module.exports = {
+ {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "/comment",
     "title": "Comment",

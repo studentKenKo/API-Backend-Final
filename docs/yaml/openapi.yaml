@@ -70,4 +70,27 @@ paths:
           description: Delete confirmation.
         '404':
           description: Animal was not found in the DB.
-
+paths:
+  api/v1/animal/{id}:
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+        description: Login
+    post:
+      tags:
+        - animals
+      description:
+        Create a new animal.
+      requestBody:
+        description: All new animal data.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: ./animal.json#/definitions/animal
+      responses:
+        '201':
+          description: User created

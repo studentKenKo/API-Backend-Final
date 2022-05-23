@@ -19,7 +19,7 @@ exports.getByAnimalId = async function getByAnimalId (animal_id) {
     return await db.run_query(query, values)
 }
 
-// create a new comment in the database
+// create a new comment into database 
 exports.add = async function add (comment) {  
   let keys = Object.keys(comment)
   let values = Object.values(comment)  
