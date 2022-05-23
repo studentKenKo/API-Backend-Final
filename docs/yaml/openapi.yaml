@@ -10,7 +10,7 @@ info:
     name: Apache 2.0
     url: 'https://www.apache.org/licenses/LICENSE-2.0.html'
 servers:
-  - url: 'https://Localhost:10833'
+  - url: 'https://Localhost:10833/api/v1'
     description: Development server
 tags:
   - name: Users
