@@ -3,14 +3,15 @@ const app = require('./common/app.test.js')
 
 const expected = {
         "id": 1,
-        "title": "title 1",
-        "alltext": "some stuff",
-        "summary": null,
-        "datecreated": "0022-01-01T00:00:00.000Z",
-        "datemodified": "0022-01-01T00:00:00.000Z",
-        "imageurl": null,
-        "published": null,
-        "authorid": 1
+        "name": "jaja",
+        "image_url": "/user/kenko/workspace/nodejs/backend_final/public/animals/avatar/1653152706438n02110627_13665.jepg",
+        "birthday": "2018-05-07 17:0523.378",
+        "gender": "male",
+        "isneutered": true,
+        "note": null,
+        "status": "available",
+        "breed_id": 1,
+        "centre_id": 3
     }
 
 
@@ -21,9 +22,9 @@ describe('Animals Testing Cases', ()=> {
       .send({})
   })
 
-  it('Return all articles', async() => {
+  it('Return all animals', async() => {
     const res = await request(app.callback())
-      .get('/api/v1/articles')
+      .get('/api/v1/animals')
       .send({})
     expect(res.statusCode).toEqual(200)
     expect(res.type).toEqual("application/json")
