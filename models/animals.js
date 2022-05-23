@@ -38,7 +38,7 @@ exports.getAll = async function getAll () {
   return data
 }
 
-//create a new animal in the database
+//create a new animal into database
 exports.add = async function add (animal) {  
   let keys = Object.keys(animal)
   let values = Object.values(animal)  
